@@ -1,12 +1,14 @@
 #include "main.h"
+
 /**
- * _strspn - prints the consecutive characters of s1 that are in s2
- * @s: source string
- * @accept: searching string
+ * _strspn - Gets the length of a prefix substring
+ * @s: The string to be searched
+ * @accept: The prefix to be measured
  *
- * Return: new string
+ * Return: The number of bytes in s which
+ *         consists only of bytes from accept
  */
-unsigned int _strpsn(char *s, char *accept)
+unsigned int _strspn(char *s, char *accept)
 {
 	unsigned int bytes = 0;
 	int index;
